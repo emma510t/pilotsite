@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 1100px;
+  margin-inline: auto;
+  background-color: antiquewhite;
+  padding: 4%;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+h1 {
+  font-size: 3.6rem;
+  padding-bottom: 4%;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+@media (min-width: 1063px) {
+  h1 {
+    font-size: 5.3rem;
+  }
+}
+@media (min-width: 700px) {
+  img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .grid_2col_1-1 {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 20px;
+  }
+  .span_row_2 {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .padding-bottom {
+    padding-bottom: 16px;
+  }
+}
